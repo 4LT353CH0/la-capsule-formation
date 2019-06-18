@@ -1,24 +1,36 @@
-html, body{
+.pageblock{
     width: 100%;
     height: 100%;
     margin: 0;
+    padding: 0;
     background-color: #f6f7fb;
 }
-.user-block{
-    display: flex;
-    width: 610px;
-    min-height: 134px;
-    flex-direction: row; 
+.pageblock__item{
+    
 }
-.trash{
-   width: 15px;
+.pageblock__item--header{
+    
 }
-.avatar{
-    width: 134px;
+.pageblock__item--section{
+    
+}
+.pageblock__item--footer{
+    
+}
+/*userblock*/
+.card{
+}
+.card__item{   
+}
+.card__item--avatar{
+    
+}
+.card__item--user-details{   
+}
+.card__item--user-name{   
+}
+.card__item--user-comments{   
+}
+.card__item--delete{   
 }
 
-
-/*
-    align-content: space-between;
-    justify-content: center;
-*/
