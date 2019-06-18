@@ -1,0 +1,20 @@
+Aide aux raccourcis
+> https://atom.io/packages/atom-shortcuts
+Emmet
+> https://atom.io/packages/emmet
+File icons
+> https://atom.io/packages/file-icons
+JavaScript ES201x, React JSX, Flow and GraphQL Grammar. Babel Transpiler
+> https://atom.io/packages/language-babel
+minimap
+> https://atom.io/packages/minimap
+Beautify
+> https://atom.io/packages/atom-beautify
+Pigments
+> https://atom.io/packages/pigments
+Pigments in minimap
+> https://atom.io/packages/minimap-pigments
+Minimap lens
+> https://atom.io/packages/minimap-lens
+Import-export
+> https://atom.io/packages/import-export

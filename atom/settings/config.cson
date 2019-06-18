@@ -1,0 +1,17 @@
+"*":
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "dark-side-of-the-moon-syntax"
+    ]
+  "exception-reporting":
+    userId: "52549df0-2945-4bc7-a093-21b811727376"
+  minimap:
+    plugins:
+      "lens-mode": true
+      "lens-modeDecorationsZIndex": 0
+      pigments: true
+      pigmentsDecorationsZIndex: 0
+  welcome:
+    showOnStartup: false
