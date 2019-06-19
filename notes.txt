@@ -1,0 +1,4 @@
+1.0 Méthodes d'enseignement en grands manques de structure
+1.1 De lancer une vidéo au début de la formation ne fonctionne plus - pourquoi passer la formation si tout est sur Youtube
+1.2 Lancement d'une technique, par écrit pour après "se débrouiller tout seul" est néfaste à la courbe de l'apprentissage. Il faudrait mieux les accompagner "à la frappe", tous ensemble pour comprendre un concept. Lire des fiches techniques pour en suite se lancer dans le dure "à la française" n'est tout simplement pas à la page d'aujourd'hui
+1.3 Le formateur devrait aussi maîtriser sa matière d'enseignement pour ne pas sortir "des fausses bonnes idées" (dev frontend/SEO)
