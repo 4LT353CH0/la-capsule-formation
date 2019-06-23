@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js pageblock" lang="">
+
 <head>
     <meta charset="utf-8">
     <title>MyMails exercice 2 - JS</title>
@@ -10,20 +11,36 @@
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="scss/styles.css">
     <meta name="theme-color" content="#fafafa">
-        <script src="js/main-exercice-min.js"></script>
+    <script src="js/main-exercice-min.js"></script>
 </head>
 
 <body class="pageblock">
     <header class="pageblock__item pageblock__item--header ">
         <nav class="navblock">
             <li class="navblock__item"><a class="navblock__link" href="index.html">Home</a></li>
-            <li class="navblock__item"><a class="navblock__link" href="userlist.html">MyMails exercice 2</a></li>
+            <li class="navblock__item"><a class="navblock__link" href="userlist.html">MyMails exercice 2 - 3</a></li>
             <li class="navblock__item"><a class="navblock__link" href="#">Home</a></li>
             <li class="navblock__item"><a class="navblock__link" href="#">Home</a></li>
             <li class="navblock__item"><a class="navblock__link" href="#">Home</a></li>
             <li class="navblock__item"><a class="navblock__link" href="#">Home</a></li>
         </nav>
     </header>
+    <section class="pageblock__item">
+        <h3>Formulaire</h3>
+        <h4>Ajoutez votre Nom et prénom</h4>
+        <div class="alert"></div>
+        <form action="#" class="form">
+            <label for="nom" class="form__item form__item--label">
+               <span>Nom</span>
+                <input name="nom" type="text" class="form__item form__item--input" id="nom">
+            </label>
+            <label name="prenom" for="prenom" class="form__item form__item--label">
+               <span>Prénom</span>
+                <input name="prenom" type="text" class="form__item form__item--input" id="prenom">
+            </label>
+            <button class="form__item form__item--button">Add ></button>
+        </form>
+    </section>
     <main class="pageblock__item pageblock__item--main-section">
         <h3>Messages des utilisateurs</h3>
         <div class="wrap">
@@ -93,7 +110,7 @@
         </div>
     </main>
     <footer class="pageblock__item pageblock__item--footer"></footer>
-    
+
 
 </body>
 

@@ -11,7 +11,7 @@ window.onload = function () {
     //
     // store total number of messages
     var numberCards = d.getElementsByClassName('cards')[0].childElementCount;
-    
+
     // creating new <strong class="messages_count messages_count--total">     
     var newElement = d.createElement('strong');
     // adding multiple classes newElement to node
@@ -28,10 +28,10 @@ window.onload = function () {
     // preparing the DOM position PARENT in order to msodify its' child
     var parentElement = oldElement.parentElement;
     parentElement.replaceChild(newElement, oldElement);
-    
+
     /*
-    > when clicked on trash, delete the corresponding CARD
-    > add a callback for the newTotal number of messages
+    > when clicked on trash, delete the corresponding CARD - yes
+    > add a callback for the newTotal number of messages - yes
     > EXTRA add personnalized <title>-message according to user on hover - no
     > EXTRA add mouseover/mouseout - yes
     > EXTRA add some animation for some TOP CLASS interaction - yes
@@ -66,9 +66,61 @@ window.onload = function () {
                 this.closest('.card').remove();
                 i--;
                 newElement.textContent = i;
-            } 
+            }
         });
     }
+
+    //
+    // PART 4 - Storing the added input on button click
+    //
+    // variables 
+    var gPrenom;
+    var gNom;
+    var cButton;
+    var input1 = d.getElementById('nom');
+    var input2 = d.getElementById('prenom');
+    // store DOM travel
+    cButton = d.getElementsByClassName('form__item--button')[0];
+    // auto-closing tags doesn't have a html-list to chose from
+    gPrenom = d.getElementById('prenom');
+    gNom = d.getElementById('nom');
+    // 
+    // list events DOM > https://developer.mozilla.org/fr/docs/Web/Events
+    gNom.addEventListener('blur', function () {
+        // console.log('next-1');
+    });
+    gPrenom.addEventListener('blur', function () {
+        // console.log('next-2');
+    });
+
+
+    cButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        //  console.log('mousedown');
+        // console.log('clicked'); 
+        // > if the inputs have got text, store it, if not alert > "No text stored" via a span in the form 
+        // > Opération logiques JS > https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Op%C3%A9rateurs_logiques
+        // Expressions et opérateurs > https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Expressions_et_Op%C3%A9rateurs
+        // IF ([input 1 does not have a value])
+        if (input1 && !input1.value && input2 && !input2.value) {
+            console.log('It\'s all empty!');
+        } else if (input1 && !input1.value) {
+            console.log('Nothing is written in the NAME field');
+            // IF ([input 1 has a value] OR [input2 has a value])
+        } else if (input2 && !input2.value) {
+            console.log('Nothing is written in the FIRST NAME field');
+            // IF ([input 1 has a value] AND [input2 has a value])
+        } else if (input1 && input1.value && input2 && input2.value) {
+            // finding the card
+//            var newCard = d.getElementsByClassName('card')[0];
+            d.getElementsByClassName('cards').appendChild('newCard');   
+//            console.log(newCard);
+        }
+    });
+
+
+
+
 
 
 }; // window onload
